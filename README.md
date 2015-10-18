@@ -31,3 +31,7 @@ Option                      | Description
 **`--borderSize SIZE`**     | Size of image border *(default: 0)*
 **`--borderColor COLOR`**   | Color of image border *(default: none)*
 **`--imageBgColor COLOR`**  | Color of output image's background *(default: none)*
+
+## License
+
+MIT license
