@@ -37,8 +37,8 @@ def parse_args():
     parser.add_argument('--size', type=int, help='size of shadow (default: %d)' % SHADOW_SIZE)
     parser.add_argument('-x', '--xOffset', metavar='X', type=int, help='x offset of shadow (default: %d)' % SHADOW_X_OFFSET)
     parser.add_argument('-y', '--yOffset', metavar='Y', type=int, help='y offset of shadow (default: %d)' % SHADOW_Y_OFFSET)
-    parser.add_argument('--borderColor', metavar='COLOR', help='color of image\'s border (default: %s)' % BORDER_COLOR)
     parser.add_argument('--borderSize', metavar='SIZE', type=int, help='size of image\'s border in pixels (default: %d)' % BORDER_SIZE)
+    parser.add_argument('--borderColor', metavar='COLOR', help='color of image\'s border (default: %s)' % BORDER_COLOR)
     parser.add_argument('--imageBgColor', metavar='COLOR', help='Background color of the output image (default: %s)' % IMAGE_BG_COLOR)
     args = vars(parser.parse_args())
     return args
