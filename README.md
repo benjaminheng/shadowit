@@ -1,19 +1,23 @@
 # Shadowit
 
-Shadow it! A no-fuss way to apply a drop shadow to an image.
+Shadow it! A no-fuss way to apply drop shadows to images.
 
-Check out some [examples](examples/examples.md) of Shadowit in action!
+Adding shadows to your images is a quick way to give some flair to your website, blog, or project repository. Shadowit allows you to easily and flexibly shadow your images. Check out some [examples](examples/examples.md) of Shadowit in action!
 
 ## Prerequisites
 
 - [Python 3.x](https://www.python.org/downloads/)
 - [ImageMagick](http://www.imagemagick.org/script/binary-releases.php)
 
-## Quick Start
+## Usage
 
 ```bash
 $ python shadowit.py <input_file> [options...]
 ```
+
+**Changing defaults**
+
+Have your favorite configuration? Easily modify the default parameters by changing the values at the top of `shadowit.py`!
 
 ## Options
 
