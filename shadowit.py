@@ -2,20 +2,17 @@ import os.path
 import subprocess
 import argparse
 
+# Default params
 EXECUTABLE = 'convert'
-
 SHADOW_OPACITY = 65     # percent
 SHADOW_COLOR = '#555555'
 SHADOW_SIZE = 9
 SHADOW_X_OFFSET = 0     # pixels
 SHADOW_Y_OFFSET = 10    # pixels
-
 BORDER_COLOR = 'none'
 BORDER_SIZE = 0         # pixels
-
 IMAGE_BG_COLOR = 'none'
-
-INPUT_IMAGE = 'sample.png'
+INPUT_IMAGE = ''
 OUTPUT_IMAGE = 'output.png'
 
 
@@ -33,16 +30,16 @@ def execute(cmd):
 def parse_args():
     parser = argparse.ArgumentParser(description='Apply shadows to images')
     parser.add_argument('input', metavar='INPUT', help="input file name")
-    parser.add_argument('-o', '--output', metavar='FILE', help='output file name (default: \'<input>-shadowed\')')
+    parser.add_argument('-o', '--output', metavar='FILE', help='output file name (default: \'output.png\')')
     parser.add_argument('--exe', help='path to ImageMagick \'convert\' executable.')
-    parser.add_argument('--opacity', type=int, help='opacity of shadow (default: 65)')
-    parser.add_argument('--color', help='color of shadow (default: #555555)')
-    parser.add_argument('--size', type=int, help='size of shadow (default: 9)')
-    parser.add_argument('-x', '--xOffset', metavar='X', type=int, help='x offset of shadow (default: 0)')
-    parser.add_argument('-y', '--yOffset', metavar='Y', type=int, help='y offset of shadow (default: 0)')
-    parser.add_argument('--borderColor', metavar='COLOR', help='color of image\'s border (default: none)')
-    parser.add_argument('--borderSize', metavar='SIZE', type=int, help='size of image\'s border in pixels (default: 0)')
-    parser.add_argument('--imageBgColor', metavar='COLOR', help='Background color of the output image (default: none)')
+    parser.add_argument('--opacity', type=int, help='opacity of shadow (default: %s)' % SHADOW_OPACITY)
+    parser.add_argument('--color', help='color of shadow (default: %s)' % SHADOW_COLOR)
+    parser.add_argument('--size', type=int, help='size of shadow (default: %d)' % SHADOW_SIZE)
+    parser.add_argument('-x', '--xOffset', metavar='X', type=int, help='x offset of shadow (default: %d)' % SHADOW_X_OFFSET)
+    parser.add_argument('-y', '--yOffset', metavar='Y', type=int, help='y offset of shadow (default: %d)' % SHADOW_Y_OFFSET)
+    parser.add_argument('--borderColor', metavar='COLOR', help='color of image\'s border (default: %s)' % BORDER_COLOR)
+    parser.add_argument('--borderSize', metavar='SIZE', type=int, help='size of image\'s border in pixels (default: %d)' % BORDER_SIZE)
+    parser.add_argument('--imageBgColor', metavar='COLOR', help='Background color of the output image (default: %s)' % IMAGE_BG_COLOR)
     args = vars(parser.parse_args())
     return args
 
