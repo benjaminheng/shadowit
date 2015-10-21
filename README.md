@@ -27,11 +27,11 @@ Option                      | Description
 **`INPUT`**                 | Input file name **(required)**
 **`-o, --output FILE`**     | Output file name *(default: output.png)*
 **`--exe FILE`**            | Path to ImageMagick's `convert` executable
-**`--opacity OPACITY`**     | Opacity of shadow *(default: 65)*
-**`--color COLOR`**         | Color of shadow *(default: #555555)*
-**`--size SIZE`**           | Size of shadow *(default: 9)*
+**`--opacity OPACITY`**     | Opacity of shadow *(default: 100)*
+**`--color COLOR`**         | Color of shadow *(default: #444444)*
+**`--size SIZE`**           | Size of shadow *(default: 22)*
 **`-x, --xOffset X`**       | X offset of shadow *(default: 0)*
-**`-y, --yOffset Y`**       | Y offset of shadow *(default: 10)*
+**`-y, --yOffset Y`**       | Y offset of shadow *(default: 20)*
 **`--imageBgColor COLOR`**  | Color of output image's background *(default: none)*
 
 ## License
