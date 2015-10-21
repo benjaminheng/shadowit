@@ -6,7 +6,7 @@ Adding shadows to your images is a quick way to give some flair to your website,
 
 ## Prerequisites
 
-- [Python 3.x](https://www.python.org/downloads/)
+- [Python](https://www.python.org/downloads/)
 - [ImageMagick](http://www.imagemagick.org/script/binary-releases.php)
 
 ## Usage
