@@ -32,8 +32,6 @@ Option                      | Description
 **`--size SIZE`**           | Size of shadow *(default: 9)*
 **`-x, --xOffset X`**       | X offset of shadow *(default: 0)*
 **`-y, --yOffset Y`**       | Y offset of shadow *(default: 10)*
-**`--borderSize SIZE`**     | Size of image border *(default: 0)*
-**`--borderColor COLOR`**   | Color of image border *(default: none)*
 **`--imageBgColor COLOR`**  | Color of output image's background *(default: none)*
 
 ## License

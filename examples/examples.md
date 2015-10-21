@@ -20,7 +20,16 @@ $ python shadowit.py sample.png
 <p align="center"><img src="images/dark_shadow.png" /></p>
 
 ```bash
-$ python shadowit.py sample.png --color black --opacity 70
+$ python shadowit.py sample.png --color black
+```
+
+----
+
+### Small shadow
+<p align="center"><img src="images/small_shadow.png" /></p>
+
+```bash
+$ python shadowit.py sample.png --size 12 -y 12
 ```
 
 ----
@@ -29,16 +38,7 @@ $ python shadowit.py sample.png --color black --opacity 70
 <p align="center"><img src="images/offset_shadow.png" /></p>
 
 ```bash
-$ python shadowit.py sample.png --color black --opacity 70 -x -10
-```
-
-----
-
-### Bordered image
-<p align="center"><img src="images/bordered_image.png" /></p>
-
-```bash
-$ python shadowit.py sample.png --borderSize 7 --borderColor white
+$ python shadowit.py sample.png --size 12 -x -12 -y 14
 ```
 
 ## Credits
