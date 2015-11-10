@@ -1,4 +1,5 @@
-# Shadowit
+![Shadowit](examples/images/shaped.png)
+----
 
 Shadow it! A no-fuss way to apply drop shadows to images.
 

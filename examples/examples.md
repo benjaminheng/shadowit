@@ -41,6 +41,17 @@ $ python shadowit.py sample.png --size 12 -y 12
 $ python shadowit.py sample.png --size 12 -x -12 -y 14
 ```
 
+----
+
+### Shaped shadow
+<p align="center"><img src="images/shaped.png" /></p>
+
+Given an image with a transparent background, Shadowit will apply a shaped shadow.
+
+```bash
+$ python shadowit.py sample.png
+```
+
 ## Credits
 
 Sample image is credited to Thoughtbot with their [Foundry project](http://thoughtbot.github.io/foundry/).
